@@ -30,7 +30,8 @@ export class RegisterComponent implements OnInit {
   //   console.log(this.form.value)
   // }
   onSubmit():void {
-    console.log(this.form.value)
+    //gwtting form values(ngSubmit)
+    console.log("submit",this.form.value, this.form.valid)
    this.store.dispatch(registerAction(this.form.value));
 
   }
